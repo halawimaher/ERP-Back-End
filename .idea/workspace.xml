@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PhpIncludePathManager">
+  <component name="ChangeListManager">
+    <list default="true" id="d34c4d48-17fa-4b5f-aba2-615daaccafec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/erp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Employees.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Employees_Kpis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Employees_Teams.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Http/Middleware/JwtMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Kpis.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Project.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Teams.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/app/Teams_Projects.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/config/jwt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_200846_create_employees_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_201105_create_kpis_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_203859_create_teams_projects_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_204846_create_employees_kpis_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2021_01_05_033353_create_employees_teams_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/erp/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/erp/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_201024_create_teams_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_201035_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/routes/api.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/erp/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/erp/vendor/filp/whoops" />
       <path value="$PROJECT_DIR$/erp/vendor/psy/psysh" />
@@ -111,12 +161,67 @@
       <path value="$PROJECT_DIR$/erp/vendor/namshi/jose" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.2">
-    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  <component name="ProjectId" id="1mI6hvM31uuqXAmcoTWp5Ak5Hbh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PhpUnit">
-    <phpunit_settings>
-      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/erp/vendor/autoload.php" />
-    </phpunit_settings>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reactErp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/erp" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d34c4d48-17fa-4b5f-aba2-615daaccafec" name="Default Changelist" comment="" />
+      <created>1609168880269</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609168880269</updated>
+      <workItem from="1609168885026" duration="1003000" />
+      <workItem from="1609170056818" duration="2026000" />
+      <workItem from="1609205294539" duration="774000" />
+      <workItem from="1609272092523" duration="3761000" />
+      <workItem from="1609771764823" duration="11245000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

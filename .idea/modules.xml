@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ERP-Back-End.iml" filepath="$PROJECT_DIR$/.idea/ERP-Back-End.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/erp.iml" filepath="$PROJECT_DIR$/.idea/erp.iml" />
     </modules>
   </component>
 </project>
