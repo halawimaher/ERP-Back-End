@@ -1,37 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d34c4d48-17fa-4b5f-aba2-615daaccafec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/erp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Employees.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Employees_Kpis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Employees_Teams.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Http/Middleware/JwtMiddleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Kpis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Project.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Teams.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/app/Teams_Projects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/config/jwt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_200846_create_employees_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_201105_create_kpis_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_203859_create_teams_projects_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_204846_create_employees_kpis_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erp/database/migrations/2021_01_05_033353_create_employees_teams_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/app/Http/Kernel.php" afterDir="false" />
+    <list default="true" id="d34c4d48-17fa-4b5f-aba2-615daaccafec" name="Default Changelist" comment="additional files for phpstorm">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/erp/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/erp/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/erp/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_201024_create_teams_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/database/migrations/2020_12_29_201035_create_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +16,12 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -174,7 +153,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reactErp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,8 +181,82 @@
       <workItem from="1609170056818" duration="2026000" />
       <workItem from="1609205294539" duration="774000" />
       <workItem from="1609272092523" duration="3761000" />
-      <workItem from="1609771764823" duration="11245000" />
+      <workItem from="1609771764823" duration="11676000" />
+      <workItem from="1610012095656" duration="317000" />
+      <workItem from="1610356971584" duration="5735000" />
+      <workItem from="1610371542469" duration="665000" />
     </task>
+    <task id="LOCAL-00001" summary="jwt middleware">
+      <created>1609818039574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818039574</updated>
+    </task>
+    <task id="LOCAL-00002" summary="database migration">
+      <created>1609818070637</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818070637</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added some apis for testing">
+      <created>1609818097431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818097431</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change to jwt">
+      <created>1609818106567</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818106567</updated>
+    </task>
+    <task id="LOCAL-00005" summary="control the jwt&amp;login">
+      <created>1609818127962</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818127962</updated>
+    </task>
+    <task id="LOCAL-00006" summary="install jwt">
+      <created>1609818144319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818144319</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added jwt to be middleware">
+      <created>1609818190354</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818190354</updated>
+    </task>
+    <task id="LOCAL-00008" summary="install jwt">
+      <created>1609818200600</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818200601</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create all models without relations">
+      <created>1609818256862</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818256862</updated>
+    </task>
+    <task id="LOCAL-00010" summary="additional files for phpstorm">
+      <created>1609818287825</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609818287825</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,5 +276,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="jwt middleware" />
+    <MESSAGE value="database migration" />
+    <MESSAGE value="added some apis for testing" />
+    <MESSAGE value="change to jwt" />
+    <MESSAGE value="control the jwt&amp;login" />
+    <MESSAGE value="added jwt to be middleware" />
+    <MESSAGE value="install jwt" />
+    <MESSAGE value="create all models without relations" />
+    <MESSAGE value="additional files for phpstorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional files for phpstorm" />
   </component>
 </project>

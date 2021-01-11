@@ -1,22 +1,29 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\User;
 use Illuminate\Http\Request;
+
+
 class AuthController extends Controller
 {
 
     /**
      * @return \Illuminate\Http\JsonResponse
      */
-    public function login()
+    public function login(Request $request)
     {
-         $credentials = request(['email', 'password']);
-         if (! $token = auth()->attempt($credentials)) {
-             return response()->json(['error' => 'Unauthorized'], 401);
-         }
+        $user = User::where([
+            'name' => $request->name,
+
+            'password' => $request->password,
+        ])->first();
+
+        $token = auth()->login($user);
 
         return $this->respondWithToken($token);
+
     }
 
     /**
