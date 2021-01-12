@@ -16,6 +16,7 @@ class EmployeeController extends Controller
     {
         //
         return response()->json(Employee::all());
+
     }
 
     /**
@@ -37,6 +38,15 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
         //
+        $result = new Employee;
+
+        $result->first_name = $request->first_name;
+        $result->last_name = $request->last_name;
+        $result->phone = $request->phone;
+        $result->image_path = $request->file('image_path')->store('images');
+        $result->email = $request->email;
+
+        $result->save();
     }
 
     /**
@@ -48,6 +58,8 @@ class EmployeeController extends Controller
     public function show($id)
     {
         //
+        $result = Employee::find($id);
+        return response()->json($result);
     }
 
     /**
