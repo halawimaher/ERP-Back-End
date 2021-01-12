@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Team;
+use App\Kpis;
 use Illuminate\Http\Request;
 
-class TeamController extends Controller
+class KpiController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
         //
-        return response()->json(Team::all());
+        return response()->json(Kpis::all());;
     }
 
     /**
@@ -36,61 +36,68 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $team = new Team;
+        //
+        $kpi = new Kpis;
 
-        $team->name = $request->name;
+        $kpi->name = $request->name;
+        $kpi->created = $request->created;
 
-        $team->save();
+        $kpi->save();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Team  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $result = Team::find($id);
+        //
+        $result = Kpis::find($id);
+        
         return response()->json($result);
+
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Team  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
         //
-       
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Team  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $team = Team::find($id);
+        //
+        $result = Kpis::find($id);
 
-        $team->name = $request->name;
+        $result->name = $request->name;
+        $result->created = $request->created;
 
-        $team->save();
+        $result->save();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Team  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $team = Team::destroy($id);
+        //
+        $result = Kpis::destroy($id);
     }
 }

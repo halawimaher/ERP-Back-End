@@ -9,7 +9,7 @@ class Employee extends Model
     //
     protected $table = "employees";
     protected $fillable = [
-        'name', 'department', 'team'
+        'first_name', 'last_name', 'phone', 'image_path', 'email', 
     ];
     public $timestamps = false;
 }
