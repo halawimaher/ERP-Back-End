@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Teams;
+use App\Roles;
 use Illuminate\Http\Request;
 
-class TeamController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
         //
-        return response()->json(Teams::all());
+        return response()->json(Roles::all());
     }
 
     /**
@@ -36,61 +36,64 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $team = new Teams;
+        //
+        $role = new Roles;
 
-        $team->name = $request->name;
+        $role->name = $request->name;
 
-        $team->save();
+        $role->save();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Teams $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $result = Teams::find($id);
+        //
+        $result = Roles::find($id);
         return response()->json($result);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Teams  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
         //
-       
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Teams  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $team = Teams::find($id);
+        //
+        $role = Roles::find($id);
 
-        $team->name = $request->name;
+        $role->name = $request->name;
 
-        $team->save();
+        $role->save();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Teams  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $team = Teams::destroy($id);
+        //
+        $role = Roles::destroy($id);
     }
 }

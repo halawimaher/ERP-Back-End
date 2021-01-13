@@ -32,5 +32,7 @@ Route::group(['middleware' => ['jwt.verify']], function() {
     Route::resource('/kpis', 'KpiController');
     Route::resource('/projects', 'ProjectController');
     Route::resource('/departments', 'DepartmentController');
+    Route::resource('/managers', 'ManagerController');
+    Route::resource('/roles', 'RolesController');
 
 });
