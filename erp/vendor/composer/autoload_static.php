@@ -497,7 +497,7 @@ class ComposerStaticInit0dc6c962946788cc83f07ed237521972
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
-        'App\\Employee' => __DIR__ . '/../..' . '/app/Employee.php',
+        'App\\Departments' => __DIR__ . '/../..' . '/app/Departments.php',
         'App\\Employees' => __DIR__ . '/../..' . '/app/Employees.php',
         'App\\Employees_Kpis' => __DIR__ . '/../..' . '/app/Employees_Kpis.php',
         'App\\Employees_Teams' => __DIR__ . '/../..' . '/app/Employees_Teams.php',
@@ -510,8 +510,10 @@ class ComposerStaticInit0dc6c962946788cc83f07ed237521972
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\DepartmentController' => __DIR__ . '/../..' . '/app/Http/Controllers/DepartmentController.php',
         'App\\Http\\Controllers\\EmployeeController' => __DIR__ . '/../..' . '/app/Http/Controllers/EmployeeController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\KpiController' => __DIR__ . '/../..' . '/app/Http/Controllers/KpiController.php',
         'App\\Http\\Controllers\\ProjectController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProjectController.php',
         'App\\Http\\Controllers\\TeamController' => __DIR__ . '/../..' . '/app/Http/Controllers/TeamController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -531,7 +533,6 @@ class ComposerStaticInit0dc6c962946788cc83f07ed237521972
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\Team' => __DIR__ . '/../..' . '/app/Team.php',
         'App\\Teams' => __DIR__ . '/../..' . '/app/Teams.php',
         'App\\Teams_Projects' => __DIR__ . '/../..' . '/app/Teams_Projects.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',

@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Teams;
+use App\Departments;
 use Illuminate\Http\Request;
 
-class TeamController extends Controller
+class DepartmentController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
         //
-        return response()->json(Teams::all());
+        return response()->json(Departments::all());
     }
 
     /**
@@ -36,61 +36,64 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        $s = new Teams;
+        //
+        $result = new Departments;
 
-        $team->name = $request->name;
+        $result->name = $request->name;
 
-        $team->save();
+        $result->save();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Teams $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $result = Teams::find($id);
+        //
+        $result = Departments::find($id);
         return response()->json($result);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Teams  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
         //
-       
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Teams  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $team = Teams::find($id);
+        //
+        $department = Departments::find($id);
 
-        $team->name = $request->name;
+        $department->name = $request->name;
 
-        $team->save();
+        $department->save();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Teams  $team
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $team = Teams::destroy($id);
+        //
+        $department = Departments::destroy($id);
     }
 }

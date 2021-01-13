@@ -9,7 +9,7 @@ class Kpis extends Model
     //
     protected $table = 'kpis';
     protected $fillable = [
-        'name', 'created'
+        'name', 'min_value', 'max_value', 'created'
     ];
     public $timestamps = false;
 }

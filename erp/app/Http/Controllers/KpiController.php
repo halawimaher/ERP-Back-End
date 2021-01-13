@@ -40,6 +40,8 @@ class KpiController extends Controller
         $kpi = new Kpis;
 
         $kpi->name = $request->name;
+        $kpi->min_value = $request->min_value;
+        $kpi->max_value = $request->max_value;
         $kpi->created = $request->created;
 
         $kpi->save();
@@ -84,6 +86,8 @@ class KpiController extends Controller
         $result = Kpis::find($id);
 
         $result->name = $request->name;
+        $kpi->min_value = $request->min_value;
+        $kpi->max_value = $request->max_value;
         $result->created = $request->created;
 
         $result->save();

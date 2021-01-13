@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Team extends Model
+class Departments extends Model
 {
     //
-    protected $table = "teams";
+    protected $table = "departments";
     protected $fillable = [
-        'name'
+        'name', 
     ];
     public $timestamps = false;
 }
