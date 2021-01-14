@@ -21,11 +21,18 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 /**
 * admin login
  */
+Route::post('/register', 'AuthController@register');
 Route::post('/login', 'AuthController@login');
 Route::post('/logout','AuthController@logout');
 
 Route::group(['middleware' => ['jwt.verify']], function() {
 
+    Route::resource('/teams', 'TeamController');
+    Route::resource('/employees', 'EmployeesController');
+    Route::resource('/kpis', 'KpiController');
+    Route::resource('/projects', 'ProjectController');
+    Route::resource('/departments', 'DepartmentController');
+    Route::resource('/managers', 'ManagerController');
+    Route::resource('/roles', 'RolesController');
 
 });
-

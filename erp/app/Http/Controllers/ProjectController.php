@@ -37,6 +37,11 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         //
+        $project = new Project;
+
+        $project->name = $request->name;
+
+        $project->save();
     }
 
     /**
@@ -48,6 +53,8 @@ class ProjectController extends Controller
     public function show($id)
     {
         //
+        $project = Project::find($id);
+        return response()->json($project);
     }
 
     /**
@@ -71,6 +78,11 @@ class ProjectController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $project = Project::find($id);
+
+        $project->name = $request->name;
+
+        $project->save();
     }
 
     /**
@@ -82,5 +94,6 @@ class ProjectController extends Controller
     public function destroy($id)
     {
         //
+        $project = Project::destroy($id);
     }
 }
