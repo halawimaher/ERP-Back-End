@@ -51,7 +51,7 @@ class TeamController extends Controller
      */
     public function show($id)
     {
-        $result = Teams::find($id);
+        $result = Teams::where('id', $id)->with('projects', 'employees')->first();
         return response()->json($result);
     }
 

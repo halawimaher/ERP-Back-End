@@ -53,7 +53,7 @@ class RoleController extends Controller
     public function show($id)
     {
         //
-        $result = Roles::find($id);
+        $result = Roles::where('id' , $id)->with('employees', 'projects')->first();
         return response()->json($result);
     }
 

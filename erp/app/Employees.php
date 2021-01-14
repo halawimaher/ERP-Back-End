@@ -8,6 +8,12 @@ class Employees extends Model
 {
     protected $table = "employees";
     protected $fillable = [
-        'first_name', 'last_name', 'username', 'address', 'city', 'country', 'phone', 'image_path', 'email', 'team_id', 'department_id', 'role_id', 'manager_id', 
+        'first_name', 'last_name', 'username', 'address', 'city', 'country', 'phone', 'image_path', 'email', 'team_id', 'project_id', 'department_id','manager_id', 
     ];
+
+    public function teams()
+    {
+        return $this->belongsTo(Teams::class, 'team_id', 'id');
+    }
+
 }

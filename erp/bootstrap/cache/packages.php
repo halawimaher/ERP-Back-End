@@ -31,11 +31,35 @@
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
     ),
   ),
+  'jimmyjs/laravel-report-generator' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Jimmyjs\\ReportGenerator\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'PdfReport' => 'Jimmyjs\\ReportGenerator\\Facades\\PdfReportFacade',
+      'ExcelReport' => 'Jimmyjs\\ReportGenerator\\Facades\\ExcelReportFacade',
+      'CSVReport' => 'Jimmyjs\\ReportGenerator\\Facades\\CSVReportFacade::class',
+    ),
+  ),
   'laravel/tinker' => 
   array (
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'maatwebsite/excel' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Excel' => 'Maatwebsite\\Excel\\Facades\\Excel',
     ),
   ),
   'nesbot/carbon' => 

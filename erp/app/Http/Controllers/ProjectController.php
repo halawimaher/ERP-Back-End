@@ -53,7 +53,7 @@ class ProjectController extends Controller
     public function show($id)
     {
         //
-        $project = Project::find($id);
+        $project = Project::where('id', $id)->with('teams')->first();
         return response()->json($project);
     }
 

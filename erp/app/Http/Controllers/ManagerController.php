@@ -37,7 +37,7 @@ class ManagerController extends Controller
     public function store(Request $request)
     {
         //
-        $result = new Managers
+        $result = new Managers;
         $result->name = $request->name;
         
         $result->save();

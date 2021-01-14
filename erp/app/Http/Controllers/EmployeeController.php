@@ -50,6 +50,7 @@ class EmployeeController extends Controller
         $result->image_path = $request->file('image_path')->store('images');
         $result->email = $request->email;
         $result->team_id = $request->team_id;
+        $result->project_id = $request->project_id;
         $result->department_id = $request->department_id;
         $result->role_id = $request->role_id;
         $result->manager_id = $request->manager_id;
@@ -66,7 +67,7 @@ class EmployeeController extends Controller
     public function show($id)
     {
         //
-        $result = Employees::find($id);
+        $result = Employees::where('id' , $id)->with('teams')->first();
         return response()->json($result);
     }
 
@@ -103,6 +104,7 @@ class EmployeeController extends Controller
         $employee->image_path = $request->file('image_path')->store('images');
         $employee->email = $request->email;
         $employee->team_id = $request->team_id;
+        $employee->project_id = $request->project_id;
         $employee->department_id = $request->department_id;
         $employee->role_id = $request->role_id;
         $employee->manager_id = $request->manager_id;

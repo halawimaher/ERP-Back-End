@@ -12,4 +12,8 @@ class Project extends Model
         'name'
     ];
     public $timestamps = false;
+    public function teams()
+    {
+    return $this->belongsToMany(Teams::class, 'teams_projects', 'project_id', 'team_id');
+    }
 }

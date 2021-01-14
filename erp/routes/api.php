@@ -28,11 +28,11 @@ Route::post('/logout','AuthController@logout');
 Route::group(['middleware' => ['jwt.verify']], function() {
 
     Route::resource('/teams', 'TeamController');
-    Route::resource('/employees', 'EmployeesController');
+    Route::resource('/employees', 'EmployeeController');
     Route::resource('/kpis', 'KpiController');
     Route::resource('/projects', 'ProjectController');
     Route::resource('/departments', 'DepartmentController');
     Route::resource('/managers', 'ManagerController');
-    Route::resource('/roles', 'RolesController');
+    Route::resource('/roles', 'RoleController');
 
 });
