@@ -15,6 +15,7 @@ class CreateEmployeesTeamsTable extends Migration
     {
         Schema::create('employees_teams', function (Blueprint $table) {
             $table->id();
+            $table->string('role');
             $table->unsignedBigInteger('team_id');
             $table->unsignedBigInteger('employee_id');
 
