@@ -12,8 +12,13 @@ class Teams extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function roles()
+    public function projects()
     {
-        return $this->belongsToMany('App\Employees','employees_teams');
+    return $this->belongsToMany(Project::class, 'teams_projects', 'team_id', 'project_id');
+    }
+
+    public function employees()
+    {
+    return $this->hasMany(Employees::class, 'team_id', 'id');
     }
 }
