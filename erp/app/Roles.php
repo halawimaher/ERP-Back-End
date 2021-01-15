@@ -17,9 +17,9 @@ class Roles extends Model
 return $this->hasMany(Employees::class, 'role_id', 'id');
 }
 
-public function projects()
+public function team_roles()
 {
-return $this->belongsToMany(Project::class, 'employees_projects_roles', 'project_id', 'employee_id', 'role_id');
+return $this->belongsToMany(Project::class, 'employees_teams_roles', 'role_id', 'team_id', 'employee_id');
 }
 
 }

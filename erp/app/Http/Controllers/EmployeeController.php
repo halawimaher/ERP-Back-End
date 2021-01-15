@@ -38,6 +38,21 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
         //
+        //check if allowed image fille type
+        $request->validate([
+        'image_path' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        //image upload
+        if ($request->hasFile('image_path')){
+        
+            //create image name
+        $imageName = 'b'. time().'.'.$request->image_path->extension();
+        $request->file('image_path')->storeAs('public/**images**', $imageName);
+        $request->image_path = $imageName;
+        }
+
+
         $result = new Employees;
 
         $result->first_name = $request->first_name;
@@ -47,10 +62,9 @@ class EmployeeController extends Controller
         $result->city = $request->city;
         $result->country = $request->country;
         $result->phone = $request->phone;
-        $result->image_path = $request->file('image_path')->store('images');
+
         $result->email = $request->email;
         $result->team_id = $request->team_id;
-        $result->project_id = $request->project_id;
         $result->department_id = $request->department_id;
         $result->role_id = $request->role_id;
         $result->manager_id = $request->manager_id;
@@ -67,7 +81,7 @@ class EmployeeController extends Controller
     public function show($id)
     {
         //
-        $result = Employees::where('id' , $id)->with('teams')->first();
+        $result = Employees::where('id' , $id)->with('teams', 'team_roles')->first();
         return response()->json($result);
     }
 

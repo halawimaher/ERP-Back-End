@@ -21,4 +21,10 @@ class Teams extends Model
     {
     return $this->hasMany(Employees::class, 'team_id', 'id');
     }
+
+    public function team_roles()
+{
+return $this->belongsToMany(Project::class, 'employees_teams_roles', 'team_id', 'employee_id', 'role_id');
+}
+
 }
