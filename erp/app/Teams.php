@@ -9,11 +9,8 @@ class Teams extends Model
     protected $table = "teams";
     protected $fillable = ['name'];
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function roles()
+    public function employees_teams()
     {
-        return $this->belongsToMany('App\Employees','employees_teams');
+        return $this->hasMany(Employees_Teams::class, 'employee_id', 'id');
     }
 }

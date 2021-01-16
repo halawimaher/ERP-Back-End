@@ -23,6 +23,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  */
 Route::post('/login', 'AuthController@login');
 Route::post('/logout','AuthController@logout');
+Route::resource('/teams', 'TeamsController');
+Route::resource('/employees', 'EmployeeController');
+Route::resource('/kpis', 'EmployeeKpis');
+Route::resource('/projects', 'ProjectController');
+Route::resource('/asign','EmployeeTeamProject');
+
 
 Route::group(['middleware' => ['jwt.verify']], function() {
 

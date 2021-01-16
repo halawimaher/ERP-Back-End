@@ -11,7 +11,13 @@ class Employees_Teams extends Model
     protected $fillable = [
         "role",
         "team_id",
-        "employee_id"
+        "employee_id",
+        "project_id"
     ];
+    public $timestamps =false;
+    public function employees_teams()
+    {
+        return $this->hasMany(Employees_Teams::class, 'employee_id', 'id');
+    }
 
 }
