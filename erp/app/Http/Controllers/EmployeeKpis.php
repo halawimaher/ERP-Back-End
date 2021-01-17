@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Employees;
 use App\Kpis;
+use DateTime;
 use Illuminate\Http\Request;
 
 class EmployeeKpis extends Controller
@@ -43,6 +44,12 @@ class EmployeeKpis extends Controller
     public function store(Request $request)
     {
         //
+        $result = new Kpis;
+
+        $result->fill($request->all());
+        $result->created = new DateTime();
+
+        return response()->json($result->save());
     }
 
     /**
