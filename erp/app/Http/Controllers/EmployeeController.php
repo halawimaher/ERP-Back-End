@@ -73,6 +73,7 @@ class EmployeeController extends Controller
         $result->city = $request->city;
         $result->country = $request->country;
         $result->phone = $request->phone;
+        $result->email = $request->email;
 
         $result->save();
     }
@@ -119,14 +120,9 @@ class EmployeeController extends Controller
         $employee->address = $request->address;
         $employee->city = $request->city;
         $employee->country = $request->country;
-        $employee->phone = $request->phone;
         $employee->image_path = $request->file('image_path')->store('images');
+        $employee->phone = $request->phone;
         $employee->email = $request->email;
-        $employee->team_id = $request->team_id;
-        $employee->project_id = $request->project_id;
-        $employee->department_id = $request->department_id;
-        $employee->role_id = $request->role_id;
-        $employee->manager_id = $request->manager_id;
 
         $employee->save();
     }

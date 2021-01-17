@@ -17,12 +17,13 @@ class CreateEmployeesTable extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('last_name');
+            $table->string('last_name');
+            $table->string('last_name');
+            $table->string('last_name');
             $table->integer('phone');
-            $table->string('email');
             $table->string('image_path');
-            $table->date('birthOfDate');
-
-
+            $table->string('email');
 
         });
     }
