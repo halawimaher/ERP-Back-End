@@ -20,7 +20,7 @@ class EmployeeKpis extends Controller
         $kpi = Employees::all();
         $a =[];
        foreach ($kpi as $e){
-            $a [] = ['employess'=>$e ,"Kpi" => $e->kpi ];
+            $a [] = ['employees'=>$e ,"Kpi" => $e->kpi ];
         }
         return response()->json($a);
     }
