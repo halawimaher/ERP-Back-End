@@ -16,7 +16,10 @@ class CreateKpisTable extends Migration
         Schema::create('kpis', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->unsignedBigInteger('employee_id');
             $table->timestamp('created');
+
+            $table->foreign('employee_id')->references('id')->on('employees');
         });
     }
 

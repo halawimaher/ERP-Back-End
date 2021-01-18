@@ -18,9 +18,11 @@ class CreateEmployeesTeamsTable extends Migration
             $table->string('role');
             $table->unsignedBigInteger('team_id');
             $table->unsignedBigInteger('employee_id');
+            $table->unsignedBigInteger('project_id');
 
             $table->foreign('team_id')->references('id')->on('teams');
             $table->foreign('employee_id')->references('id')->on('employees');
+            $table->foreign('project_id')->references('id')->on('projects');
         });
     }
 

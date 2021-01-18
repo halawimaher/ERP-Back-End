@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Employees;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Psy\Util\Json;
 
 class EmployeeController extends Controller
@@ -48,23 +49,16 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        //check if allowed image fille type
-        $request->validate([
-            'image_path' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
-
-        //image upload
-        if ($request->hasFile('image_path')){
-
-            //create image name
-            $imageName = 'b'. time().'.'.$request->image_path->extension();
-            $request->file('image_path')->storeAs('public/**images**', $imageName);
-            $request->image_path = $imageName;
-        }
-
-
         $result = new Employees;
+
+        $path = "";
+        if ($request->image_path) {
+        $path = Storage::disk('public')->put('', $request->image_path);
+        }
+   
+        if ($path != "") {
+            $result->image_path = $path;
+        }
 
         $result->first_name = $request->first_name;
         $result->last_name = $request->last_name;
@@ -73,6 +67,7 @@ class EmployeeController extends Controller
         $result->city = $request->city;
         $result->country = $request->country;
         $result->phone = $request->phone;
+        $result->email = $request->email;
 
         $result->save();
     }
@@ -85,9 +80,13 @@ class EmployeeController extends Controller
      */
     public function show($id)
     {
-        //
-        $result = Employees::where('id' , $id)->with('teams', 'team_roles')->first();
-        return response()->json($result);
+        try {
+        $e = Employees::find($id);
+        return response()->json(['employee'=>$e , 'team' =>$e->team , 'role'=>$e->role, 'project' => $e->project]);
+        }
+        catch (\Exception $e){
+        return response()->json($e->getMessage());
+        }
     }
 
     /**
@@ -119,14 +118,9 @@ class EmployeeController extends Controller
         $employee->address = $request->address;
         $employee->city = $request->city;
         $employee->country = $request->country;
-        $employee->phone = $request->phone;
         $employee->image_path = $request->file('image_path')->store('images');
+        $employee->phone = $request->phone;
         $employee->email = $request->email;
-        $employee->team_id = $request->team_id;
-        $employee->project_id = $request->project_id;
-        $employee->department_id = $request->department_id;
-        $employee->role_id = $request->role_id;
-        $employee->manager_id = $request->manager_id;
 
         $employee->save();
     }

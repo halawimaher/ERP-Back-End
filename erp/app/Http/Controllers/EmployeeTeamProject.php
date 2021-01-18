@@ -37,9 +37,9 @@ class EmployeeTeamProject extends Controller
     public function store(Request $request)
     {
         //
-        $asign = new Employees_Teams();
-        $asign->fill($request->all());
-        return response()->json($asign->save());
+        $assign = new Employees_Teams();
+        $assign->fill($request->all());
+        return response()->json($assign->save());
     }
 
     /**
