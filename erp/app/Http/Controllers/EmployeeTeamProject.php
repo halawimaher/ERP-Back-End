@@ -37,8 +37,13 @@ class EmployeeTeamProject extends Controller
     public function store(Request $request)
     {
         //
+        
         $assign = new Employees_Teams();
-        $assign->fill($request->all());
+        $assign->role = $request->role ? $request->role : null;
+        $assign->team_id = $request->team_id ? $request->team_id : null;
+        $assign->employee_id = $request->employee_id ? $request->employee_id : null;
+        $assign->project_id = $request->project_id ? $request->project_id : null;
+
         return response()->json($assign->save());
     }
 

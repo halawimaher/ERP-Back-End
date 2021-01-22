@@ -28,6 +28,7 @@ Route::resource('/employees', 'EmployeeController');
 Route::resource('/kpis', 'EmployeeKpis');
 Route::resource('/projects', 'ProjectController');
 Route::resource('/assign','EmployeeTeamProject');
+Route::get('/evaluate','EmployeeKpis@evaluate');
 
 
 Route::group(['middleware' => ['jwt.verify']], function() {

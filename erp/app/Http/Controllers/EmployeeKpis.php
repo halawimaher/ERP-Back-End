@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Employees;
-use App\Kpis;
+use App\Employees_Kpis;
 use DateTime;
 use Illuminate\Http\Request;
 
@@ -17,12 +17,19 @@ class EmployeeKpis extends Controller
     public function index()
     {
         //
-        $kpi = Employees::all();
+        $kpi = Employees_Kpis::all();
         $a =[];
        foreach ($kpi as $e){
-            $a [] = ['employees'=>$e ,"Kpi" => $e->kpi ];
+            $a [] = ['employees'=>$e ,"Kpi" => $e->employee];
         }
-        return response()->json($a);
+        return response()->json($kpi);
+    }
+
+    public function evaluate()
+    {
+        //
+        $kpi = Employees_Kpis::all()->where('is_current', -1);
+        return response()->json($kpi);
     }
 
     /**
