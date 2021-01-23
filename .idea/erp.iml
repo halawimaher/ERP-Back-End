@@ -113,6 +113,14 @@
       <excludeFolder url="file://$MODULE_DIR$/erp/vendor/tymon/jwt-auth" />
       <excludeFolder url="file://$MODULE_DIR$/erp/vendor/lcobucci/jwt" />
       <excludeFolder url="file://$MODULE_DIR$/erp/vendor/namshi/jose" />
+      <excludeFolder url="file://$MODULE_DIR$/erp/storage/framework/cache/data/44" />
+      <excludeFolder url="file://$MODULE_DIR$/erp/storage/framework/cache/data/c2" />
+      <excludeFolder url="file://$MODULE_DIR$/erp/vendor/dnoegel" />
+      <excludeFolder url="file://$MODULE_DIR$/erp/vendor/dragonmantank" />
+      <excludeFolder url="file://$MODULE_DIR$/erp/vendor/hamcrest" />
+      <excludeFolder url="file://$MODULE_DIR$/erp/vendor/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/erp/vendor/nunomaduro" />
+      <excludeFolder url="file://$MODULE_DIR$/erp/vendor/psy" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

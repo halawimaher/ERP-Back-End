@@ -28,7 +28,21 @@ class EmployeeKpis extends Controller
     public function evaluate()
     {
         //
-        $kpi = Employees_Kpis::all()->where('is_current', -1);
+        $kpi = Employees_Kpis::all()->where('is_current',"=",0);
+        $kpi2 = Employees_Kpis::all()->where('is_current',"=",1);
+
+        foreach ($kpi as $emp){
+            foreach ($kpi2 as $emp2){
+
+                if($emp->employee_id == $emp2->employee_id){
+                    $e= Employees::find($emp->employee_id);
+                    $emp->employee= $e->first_name ." ". $e->last_name ;
+                    $emp->fraction = ( $emp2->evaluation/10 - $emp->evaluation/10 ) *100 ;
+                }
+            }
+
+
+        }
         return response()->json($kpi);
     }
 

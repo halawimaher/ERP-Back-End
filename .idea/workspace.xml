@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d34c4d48-17fa-4b5f-aba2-615daaccafec" name="Default Changelist" comment="additional files for phpstorm">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/erp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/erp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp/app/Http/Controllers/EmployeeKpis.php" beforeDir="false" afterPath="$PROJECT_DIR$/erp/app/Http/Controllers/EmployeeKpis.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/erp/composer.json</pharConfigPath>
     <execution />
@@ -152,7 +154,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reactErp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -184,6 +186,11 @@
       <workItem from="1610012095656" duration="317000" />
       <workItem from="1610356971584" duration="5735000" />
       <workItem from="1610371542469" duration="665000" />
+      <workItem from="1610812755998" duration="9571000" />
+      <workItem from="1610940280184" duration="944000" />
+      <workItem from="1610974581981" duration="110000" />
+      <workItem from="1611426394232" duration="2581000" />
+      <workItem from="1611431552686" duration="4435000" />
     </task>
     <task id="LOCAL-00001" summary="jwt middleware">
       <created>1609818039574</created>
@@ -255,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609818287825</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix database relation">
+      <created>1610823323592</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610823323592</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +280,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/maherDbRelations" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -284,6 +310,7 @@
     <MESSAGE value="install jwt" />
     <MESSAGE value="create all models without relations" />
     <MESSAGE value="additional files for phpstorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="additional files for phpstorm" />
+    <MESSAGE value="fix database relation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix database relation" />
   </component>
 </project>
